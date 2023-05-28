@@ -47,15 +47,29 @@
     padding: 2px;
     margin: 2px;
 }
+.foot-column1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+.foot-column1 ul li a:hover{
+    color: blue;
+}
+
+.foot-column1 ul li img{
+    padding-right: 10px;
+    width: 30px;
+}
 
 #copy-right{
     display: flex;
     justify-content: center;
     background-color: rgb(187, 186, 186);
-    bottom: 1px;
+    bottom: 1;
 }
 .attribution{
-    font-size: 12px;
+    font-size: 15px;
+    margin: 6px;
 }
 .attribution a{
     text-decoration: none;

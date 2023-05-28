@@ -18,7 +18,7 @@
     text-align: center;
     padding-top: 350px;
     padding-bottom: 140px;
-    color: beige;
+    color: rgb(255, 255, 255);
     z-index: -1;
 
 }
@@ -99,11 +99,11 @@
 }
 .offer-column1{
     flex-basis: 31%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.733)),url(../images/solar-training.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.733)),url(../images/);
     background-size: cover;
     color: white;
     border-radius: 20px;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
     padding: 20px 20px;
     box-sizing: border-box;
 
@@ -114,33 +114,34 @@
     background-size: cover;
     color: white;
     border-radius: 20px;
-    margin-bottom: 5%;
     padding: 20px 20px;
     box-sizing: border-box;          
 }
 .offer-column3{
     flex-basis: 31%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.733)),url(../images/solar-training.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.733)),url(../images/training-&-development.jpg);
     background-size: cover;
     color: white;
     border-radius: 20px;
-    margin-bottom: 5%;
     padding: 20px 20px;
     box-sizing: border-box;        
 }
 .offer-column1 h2{
     text-align: center;
     font-weight: 500;
+    padding-bottom: 20px;
     margin: 20px;
 }
 .offer-column2 h2{
     text-align: center;
     font-weight: 500;
+    padding-bottom: 20px;
     margin: 20px;
 }
 .offer-column3 h2{
     text-align: center;
     font-weight: 500;
+    padding-bottom: 20px;
     margin: 20px;
 }
 
