@@ -1,0 +1,31 @@
+.nav-links{
+    background-color: rgb(194, 194, 196);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-links #image{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 12px;
+    padding: 13px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
