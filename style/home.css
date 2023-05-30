@@ -99,11 +99,10 @@
 }
 .offer-column1{
     flex-basis: 31%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.733)),url(../images/);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.733)),url(../images/manfacturing.jpg);
     background-size: cover;
     color: white;
     border-radius: 20px;
-    margin-bottom: 7%;
     padding: 20px 20px;
     box-sizing: border-box;
 
