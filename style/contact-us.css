@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.conatct-us{
+    margin: auto;
+    padding-top: 200px;
+    position: absolute;
+}
+
+.conatct-us-row{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-column1{
+    flex-basis: 73%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 20px;
+}
+.conatct-column2{
+    flex-basis: 50%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 20px;
+}
+.contact-column1 h3{
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.contact-column1 p{
+    text-align: center;
+    padding: 20px;
+    margin-top: 2px;
+}
+
+.contact-column1 ul li{
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    padding-left: 200px;
+}
+.contact-column1 ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.conatct-column2 label{
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.conatct-column2 #text{
+    width: 500px;
+    height: 30px;
+    cursor: text;
+    border: 1px solid rgb(173, 173, 173);
+}
+.conatct-column2 #message{
+    width: 500px;
+    border: 1px solid rgb(133, 132, 132);
+}
+.conatct-column2 #btn{
+    padding: 20px;
+    size: 15px;
+    font-weight: 600;
+    color: white;
+    border-color: rgba(0, 132, 255, 0.884);
+    background-color: rgba(0, 174, 255, 0.829);
+}
+
+
+
+
+
+
