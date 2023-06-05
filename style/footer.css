@@ -13,6 +13,7 @@
 .rows-foot{
     display: flex;
     justify-content: space-between;
+    
 }
 .foot-column1{
     border-radius: 20px;
@@ -77,4 +78,25 @@
 }
 .attribution a:hover{
     color: blue;
+}
+
+
+
+@media screen and (max-width: 481px) {
+    .rows-foot{
+        flex-direction: column;
+    }
+    .foot-column1 ul li img{
+        width: 20px;
+        padding-right: 0;
+    }
+    .foot-column1 ul li a{
+        font-size: 17px;
+    }
+    #copy-right{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+
 }
