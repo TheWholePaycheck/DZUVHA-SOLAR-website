@@ -5,6 +5,7 @@
 
 .video-container {
     position: relative;
+    overflow-x: hidden;
     
 }
 .video-container video {
@@ -13,9 +14,9 @@
     z-index: -1;
     height: 90%;
     width: 100%;
+    
 }
 .video-container .caption {
-    text-align: center;
     padding-top: 150px;
     padding-bottom: 140px;
     color: rgb(255, 255, 255);
@@ -23,22 +24,61 @@
 
 }
 .video-container .caption h1{
+    text-align: center;
     text-transform: capitalize;
     font-size: 170px;
     z-index: -1;
 }
 .video-container .caption h2{
     text-transform: capitalize;
+    text-align: center;
     font-size: 50px;
     
 }
 .video-container .caption p{
     text-transform: uppercase;
+    text-align: center;
     font-size: 15px;
     padding-top: 20px;
 }
 
+@media screen and (max-width: 481px) {
+    .video-container{
+        overflow-x: hidden;
+    }
+    .video-container .caption h1{
+        font-size: 80px;
+    }
+    .video-container .caption h2{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .video-container .caption p{
+        font-style: 15px;
+    }
 
+
+    .our-business h1{
+        font-weight: 700;
+    }
+    .rows{
+        flex-direction: column;
+    }
+
+    .business-img{
+        width: 90%;
+    }
+
+    .rows-offer{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    
+}
 
 
 .our-business{
