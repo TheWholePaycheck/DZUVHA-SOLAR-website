@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Geologica', sans-serif;
 }
 
 .video-container {
@@ -25,12 +26,13 @@
     color: rgb(255, 255, 255);
     z-index: -1;
     background-color: rgba(0, 0, 0, 0.534); /* create contrast for readability, by adding a black tint*/
+    padding: 0px 10px;
     height: 100vh;
 }
 .video-container .caption h1{
     text-align: center;
     text-transform: capitalize;
-    font-size: 170px;
+    font-size: 5rem;
 }
 .video-container .caption h2{
     text-transform: capitalize;
@@ -50,7 +52,7 @@
         overflow-x: hidden;
     }
     .video-container .caption h1{
-        font-size: 80px;
+        font-size: 12vw;
     }
     .video-container .caption h2{
         font-size: 20px;
