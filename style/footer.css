@@ -19,6 +19,7 @@
     border-radius: 20px;
     margin-bottom: 5%;
     padding: 20px 20px;
+    text-align: center;
 }
 .foot-column2{
     flex-basis: 50%;
@@ -45,13 +46,14 @@
 }
 .foot-column1 ul li{
     list-style: none;
-    padding: 2px;
+    padding: 10px 20px;
     margin: 2px;
 }
 .foot-column1 ul li a{
     text-decoration: none;
     color: black;
     font-weight: 100;
+    display: block;
 }
 .foot-column1 ul li a:hover{
     color: blue;
