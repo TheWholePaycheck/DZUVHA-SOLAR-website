@@ -46,7 +46,6 @@
 .foot-column1 ul li{
     list-style: none;
     padding: 10px 20px;
-    margin: 2px;
     /* center the icon with the information */
     display: flex;
     align-items: center;
