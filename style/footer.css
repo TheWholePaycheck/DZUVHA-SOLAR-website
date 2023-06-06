@@ -19,7 +19,6 @@
     border-radius: 20px;
     margin-bottom: 5%;
     padding: 20px 20px;
-    text-align: center;
 }
 .foot-column2{
     flex-basis: 50%;
@@ -48,12 +47,14 @@
     list-style: none;
     padding: 10px 20px;
     margin: 2px;
+    /* center the icon with the information */
+    display: flex;
+    align-items: center;
 }
 .foot-column1 ul li a{
     text-decoration: none;
     color: black;
     font-weight: 100;
-    display: block;
 }
 .foot-column1 ul li a:hover{
     color: blue;
@@ -88,6 +89,20 @@
     .rows-foot{
         flex-direction: column;
     }
+    
+    /* center the text */
+    .foot-column1{
+        text-align: center;
+    }
+
+    /* vertical centered layout on mobile */
+    .foot-column1 ul li{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        row-gap: 10px;
+    }
+
     .foot-column1 ul li img{
         width: 20px;
         padding-right: 0;
