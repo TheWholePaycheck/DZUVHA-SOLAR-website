@@ -5,23 +5,25 @@
 
 .video-container {
     position: relative;
-    overflow-x: hidden;
-    
+    overflow: hidden;
+    height: 100vh; /* fits the height of the viewport(screen)*/
+    width: 100%;
 }
 .video-container video {
     position: absolute;
-    object-fit: fill;
+    object-fit: cover; /* set to cover to avoid stretching */
+    object-position: center;
     z-index: -1;
-    height: 90%;
     width: 100%;
-    
+    height: 100%;
 }
 .video-container .caption {
     padding-top: 150px;
     padding-bottom: 140px;
     color: rgb(255, 255, 255);
     z-index: -1;
-
+    background-color: rgba(0, 0, 0, 0.534); /* create contrast for readability, by adding a black tint*/
+    height: 100vh;
 }
 .video-container .caption h1{
     text-align: center;
