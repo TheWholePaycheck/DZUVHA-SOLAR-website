@@ -4,13 +4,13 @@
     font-family: 'Geologica', sans-serif;
 }
 
-.conatct-us{
+.contact-us{
     margin: auto;
     padding-top: 150px;
     position: absolute;
 }
 
-.conatct-us-row{
+.contact-us-row{
     display: flex;
     justify-content: space-between;
 }
@@ -20,7 +20,7 @@
     margin-bottom: 5%;
     padding: 20px 20px;
 }
-.conatct-column2{
+.contact-column2{
     flex-basis: 50%;
     border-radius: 20px;
     margin-bottom: 5%;
@@ -49,22 +49,22 @@
     
 }
 
-.conatct-column2 label{
+.contact-column2 label{
     display: flex;
     font-size: 20px;
     margin-top: 20px;
 }
-.conatct-column2 #text{
+.contact-column2 #text{
     width: 500px;
     height: 30px;
     cursor: text;
     border: 1px solid rgb(173, 173, 173);
 }
-.conatct-column2 #message{
+.contact-column2 #message{
     width: 500px;
     border: 1px solid rgb(133, 132, 132);
 }
-.conatct-column2 #btn{
+.contact-column2 #btn{
     padding: 20px;
     size: 15px;
     font-weight: 600;
