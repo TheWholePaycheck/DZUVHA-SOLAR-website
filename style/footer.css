@@ -81,3 +81,18 @@
 .attribution a:hover {
     color: var(--accent-color);
 }
+
+
+/* RESPONSIVENESS FOR LARGER DEVICES (DESKTOPS/TABLETS) */
+@media screen and (min-width: 780px) {
+    .footer-columns .footer-contact-column ul {
+        flex-direction: row !important;
+        gap: 50px;
+    }
+
+    .footer-contact-column ul li {
+        flex-direction: row !important;
+        gap: 10px;
+    }
+
+}
