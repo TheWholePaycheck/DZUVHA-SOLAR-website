@@ -1,23 +1,34 @@
-*{
+:root {
+    --accent-color: #62b800;
+    --orange: #FE5904;
+    --deep-blue: #005EA4;
+}
+
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Geologica', sans-serif;
 }
 
 .video-container {
     position: relative;
     overflow: hidden;
-    height: 100vh; /* fits the height of the viewport(screen)*/
+    height: 100vh;
+    /* fits the height of the viewport(screen)*/
     width: 100%;
 }
+
 .video-container video {
     position: absolute;
-    object-fit: cover; /* set to cover to avoid stretching */
+    object-fit: cover;
+    /* set to cover to avoid stretching */
     object-position: center;
     z-index: -1;
     width: 100%;
     height: 100%;
 }
+
 .video-container .caption {
     display: flex;
     flex-direction: column;
@@ -25,168 +36,120 @@
     align-items: center;
     color: rgb(255, 255, 255);
     z-index: -1;
-    background-color: rgba(0, 0, 0, 0.534); /* create contrast for readability, by adding a black tint*/
+    background-color: rgba(0, 0, 0, 0.534);
+    /* create contrast for readability, by adding a black tint*/
     padding: 0px 10px;
     height: 100vh;
 }
-.video-container .caption h1{
+
+.video-container .caption h1 {
     text-align: center;
-    text-transform: capitalize;
-    font-size: 5rem;
+    text-transform: uppercase;
+    font-size: 10vw;
 }
-.video-container .caption h2{
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 50px;
-    
-}
-.video-container .caption p{
+
+.video-container .caption p {
     text-transform: uppercase;
     text-align: center;
     font-size: 15px;
     padding-top: 20px;
 }
 
-@media screen and (max-width: 481px) {
-    .video-container{
-        overflow-x: hidden;
-    }
-    .video-container .caption h1{
-        font-size: 12vw;
-    }
-    .video-container .caption h2{
-        font-size: 20px;
-        font-weight: 200;
-    }
-    .video-container .caption p{
-        font-style: 15px;
-    }
-
-
-    .our-business h1{
-        font-weight: 700;
-    }
-    .rows{
-        flex-direction: column;
-    }
-
-    .business-img{
-        width: 90%;
-    }
-
-    .rows-offer{
-        flex-direction: column;
-        row-gap: 20px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    
-    
-}
-
-
-.our-business{
-    width: 90%;
+.our-business {
+    padding: 20px;
     margin: auto;
     padding-top: 40px;
 }
-.our-business h1{
-    font-size: 50px;
+
+.our-business h2 {
+    font-size: 28px;
     font-weight: 100;
-    display: flex;
-    justify-content: center;
 }
-.rows{
+
+.business-rows {
     margin-top: 5%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
-.column{
+
+.business-column {
     flex-basis: 100%;
 }
-.business-img{
+
+.business-img {
     display: block;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
     padding-top: 20px;
     padding-bottom: 20px;
     height: 278px;
-        
 }
-.column h2{
+
+.column h2 {
     padding-top: 20px;
     font-weight: 100;
     text-align: center;
-
 }
-.column p{
+
+.column p {
     margin: 20px;
     font-size: 16px;
 }
 
-
-.offer{
+.offers {
     padding-top: 30px;
     width: 90%;
     margin: auto;
 }
-.offer h1{
-    font-size: 50px;
+
+.offers h2 {
+
+    font-size: 30px;
     font-weight: 100;
     margin: 2px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
-.rows-offer{
-    margin-top: 5%;
+
+.rows-offer {
+    margin-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-}
-.offer-column1{
-    flex-basis: 31%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.733)),url(../images/manfacturing.jpg);
-    background-size: cover;
-    color: white;
-    border-radius: 20px;
-    padding: 20px 20px;
-    box-sizing: border-box;
-
-}
-.offer-column2{
-    flex-basis: 31%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.733)),url(../images/solar-installation.jpg);
-    background-size: cover;
-    color: white;
-    border-radius: 20px;
-    padding: 20px 20px;
-    box-sizing: border-box;          
-}
-.offer-column3{
-    flex-basis: 31%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.733)),url(../images/training-&-development.jpg);
-    background-size: cover;
-    color: white;
-    border-radius: 20px;
-    padding: 20px 20px;
-    box-sizing: border-box;        
-}
-.offer-column1 h2{
     text-align: center;
-    font-weight: 500;
-    padding-bottom: 20px;
-    margin: 20px;
-}
-.offer-column2 h2{
-    text-align: center;
-    font-weight: 500;
-    padding-bottom: 20px;
-    margin: 20px;
-}
-.offer-column3 h2{
-    text-align: center;
-    font-weight: 500;
-    padding-bottom: 20px;
-    margin: 20px;
+    gap: 20px;
 }
 
+.rows-offer div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    height: 100%;
+    min-height: 200px;
+}
+
+section.offers .offer-card-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.733)), url(../images/manfacturing.jpg);
+}
+
+section.offers .offer-card-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.733)), url(../images/solar-installation.jpg);
+}
+
+section.offers .offer-card-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.733)), url(../images/training-&-development.jpg);
+}
+
+.rows-offer h3 {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
+}

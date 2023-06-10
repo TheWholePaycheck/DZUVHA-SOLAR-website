@@ -1,8 +1,12 @@
-
+:root {
+    --accent-color: #62b800;
+    --orange: #FE5904;
+    --deep-blue: #005EA4;
+}
 
 .Header {
     align-items: center;
-    background: rgb(213, 212, 212);
+    background: rgb(247, 250, 246);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     display: flex;
@@ -14,27 +18,31 @@
     width: 100%;
     z-index: 10;
 }
+
 .Header.has-mobile-button .MobileNav-trigger {
     display: flex;
 }
+
 .Header-inner {
     display: flex;
     justify-content: space-between;
     transition: height 0.4s ease;
     width: 80vw;
 }
+
 .Header .logo {
     align-self: center;
     display: flex;
-    height: 80px;
     margin-right: 60px;
-    width: 200px;
+    width: 50px;
 }
+
 .Header .logo img {
     height: 100%;
     object-fit: contain;
     width: 100%;
 }
+
 .Header-nav {
     display: flex;
     flex-wrap: wrap;
@@ -45,22 +53,27 @@
     overflow: hidden;
     width: 100%;
 }
+
 .Header-nav-item {
     align-items: center;
     align-self: center;
-    color: darkblue;
+    color: rgb(43, 177, 3);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     flex-shrink: 0;
     font-size: 21px;
     font-weight: bold;
-    height: 100%;
     line-height: 32px;
     margin: 0 40px;
-    transition:  0.4s ease, padding 0.4s ease;
+    transition: 0.4s ease, padding 0.4s ease;
 }
+
 .Header-nav-item:last-child {
     margin-right: 0;
 }
+
 .Header-nav-item a {
     color: black;
     text-decoration: none;
@@ -72,10 +85,6 @@
     }
 }
 
-
-
-
-
 .MobileNav {
     height: calc(100% - 55px);
     left: 0;
@@ -85,10 +94,13 @@
     width: 100%;
     z-index: 9;
 }
+
 .MobileNav-inner {
     background: rgb(213, 212, 212);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     max-width: 100%;
     overflow-y: scroll;
@@ -96,47 +108,52 @@
     right: 0;
     transform: translate(0, -105%);
     transition: transform 0.4s ease, visibility 0.4s ease;
-    visibility: hidden;
     width: 100%;
 }
+
 .MobileNav-inner .Button {
     letter-spacing: 1px;
     line-height: 3.8;
     margin: 20px -8px 20px;
     width: 100%;
 }
+
 .MobileNav-inner .MobileNav-trigger {
     display: none;
     position: absolute;
     right: 38px;
     top: 30px;
 }
+
 .MobileNav-item {
     display: none;
     font-size: 26px;
     font-weight: bold;
-    margin: 26px 0;
     transition: opacity 0.3s ease;
 }
+
 .MobileNav-item {
     display: block;
 }
+
 .MobileNav-item-title {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-left: 120px;
 }
+
 .MobileNav-item-title a {
-    color: black;
+    color: var(--orange);
     flex-shrink: 0;
     text-decoration: none;
 }
+
 .MobileNav-item-title span {
     min-width: 32px;
     position: relative;
     width: 100%;
 }
+
 .MobileNav-item-title span::after {
     border-left: 2px solid rgb(213, 212, 212);
     border-top: 2px solid rgb(213, 212, 212);
@@ -150,6 +167,7 @@
     transition: transform 0.2s ease;
     width: 14px;
 }
+
 .MobileNav-overlay {
     height: 100%;
     left: 0;
@@ -157,6 +175,7 @@
     top: 0;
     width: 100%;
 }
+
 .MobileNav-trigger {
     align-items: center;
     align-self: center;
@@ -167,13 +186,15 @@
     flex-shrink: 0;
     height: 100%;
 }
+
 .MobileNav-trigger-inner {
     height: 12px;
     position: relative;
     width: 24px;
 }
+
 .MobileNav-trigger-inner::after {
-    background: #0a02fc;
+    background: var(--orange);
     content: "";
     height: 2px;
     left: 0;
@@ -183,8 +204,9 @@
     transition: transform 0.2s ease;
     width: 100%;
 }
+
 .MobileNav-trigger-inner::before {
-    background: #0800ff;
+    background: var(--orange);
     bottom: 0;
     content: "";
     height: 2px;
@@ -204,37 +226,42 @@
 }
 
 @media screen and (min-width: 481px) {
-.MobileNav {
-    height: 100%;
-    top: 0;
-    z-index: 11;
+    .MobileNav {
+        height: 100%;
+        top: 0;
+        z-index: 11;
+    }
+
+    .MobileNav-inner {
+        padding-top: 90px;
+        transform: translate(100%, 0);
+        width: 375px;
+    }
+
+    .MobileNav-inner .MobileNav-trigger {
+        display: block;
+    }
+
+    .MobileNav-trigger {
+        display: none;
+    }
 }
-.MobileNav-inner {
-    padding-top: 90px;
-    transform: translate(100%, 0);
-    width: 375px;
-}
-.MobileNav-inner .MobileNav-trigger {
-    display: block;
-}
-.MobileNav-trigger {
-    display: none;
-}
-}
+
 @media screen and (min-width: 871px) {
-.MobileNav-inner {
-    padding-top: 160px;
-}
+    .MobileNav-inner {
+        padding-top: 160px;
+    }
 }
 
 .is-mobilenav-open {
     overflow-y: hidden;
 }
+
 .is-mobilenav-open .MobileNav {
     pointer-events: all;
 }
+
 .is-mobilenav-open .MobileNav-inner {
     transform: translate(0, 0);
     visibility: visible;
 }
-
