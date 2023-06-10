@@ -11,6 +11,11 @@
     font-family: 'Geologica', sans-serif;
 }
 
+/* smooth scroll-to */
+html {
+    scroll-behavior: smooth;
+}
+
 .video-container {
     position: relative;
     overflow: hidden;
@@ -53,6 +58,19 @@
     text-align: center;
     font-size: 15px;
     padding-top: 20px;
+}
+
+.video-container .caption .caption-btn {
+    padding: 8px 14px;
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.caption .caption-btn:hover {
+    background-color: #ad3a00;
 }
 
 .our-business {
