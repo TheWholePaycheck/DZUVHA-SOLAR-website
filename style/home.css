@@ -11,6 +11,11 @@
     font-family: 'Geologica', sans-serif;
 }
 
+*::selection {
+    color: white;
+    background-color: var(--orange);
+}
+
 /* smooth scroll-to */
 html {
     scroll-behavior: smooth;
@@ -53,6 +58,12 @@ html {
     font-size: 32px;
 }
 
+.caption .caption-highlight {
+    background-color: var(--orange);
+    color: white;
+    padding: 0px 10px;
+}
+
 .video-container .caption p {
     text-transform: uppercase;
     text-align: center;
@@ -67,6 +78,7 @@ html {
     color: white;
     margin-top: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .caption .caption-btn:hover {
@@ -85,19 +97,21 @@ html {
 }
 
 .business-rows {
-    margin-top: 5%;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .business-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 278px;
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.business-column {
+    flex: 1;
 }
 
 .column h2 {
@@ -170,6 +184,10 @@ section.offers .offer-card-3 {
         font-size: 5vw !important;
     }
 
+    .caption-btn {
+        font-size: large;
+    }
+
     .rows-offer {
         flex-direction: row !important;
     }
@@ -177,4 +195,28 @@ section.offers .offer-card-3 {
     .rows-offer div {
         height: auto;
     }
+    
+    .business-rows {
+        flex-direction: row !important;
+    }
+
+    .column {
+        flex: 1.5fr;
+    }
+
+    .business-img {
+        width: inherit;
+        max-width: 475px !important;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    .caption h1 {
+        font-size: 24px !important;
+    }
+
+    .caption p {
+        font-size: 12px !important;
+    }
+
 }

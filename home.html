@@ -27,43 +27,27 @@
     <link rel="stylesheet" href="./style/home.css" type="text/css">
     <link rel="stylesheet" href="./style/navigation.css" type="text/css">
     <link rel="stylesheet" href="./style/footer.css" type="text/css">
+
+    <link rel="stylesheet" href="./style/aos.css">
 </head>
 
 <body>
+    <header data-header>
+        <nav data-aos="fade-down">
+            <a href="./home.html" data-nav>
+                <img class="logo" src="./images/logo.png" alt="">
+            </a>
 
-    <div class="MobileNav" data-mobile-nav>
-        <div class="MobileNav-overlay" data-mobile-nav-overlay></div>
-        <div class="MobileNav-inner">
-            <div class="MobileNav-trigger" data-mobile-nav-trigger>
-                <div class="MobileNav-trigger-inner"></div>
+            <div class="nav-items" data-nav-item="5">
+                <a href="./contact-us.html">Contact</a>
             </div>
-            <ul class="MobileNav-nav" data-mobile-nav-list>
-                <li class="MobileNav-item" data-mobile-nav-item="5">
-                    <div class="MobileNav-item-title">
-                        <a href="./contact-us.html">Contact</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
 
-    <header class="Header" data-header>
-        <div class="Header-inner" data-header-nav>
-
-            <div class="logo">
-                <a href="./home.html">
-                    <img src="./images/logo.png" alt="">
-                </a>
-            </div>
-            <nav class="Header-nav" data-nav>
-                <div class="Header-nav-item" data-nav-item="5">
-                    <a href="./contact-us.html">Contact</a>
-                </div>
-            </nav>
             <button class="MobileNav-trigger" data-mobile-nav-trigger>
                 <div class="MobileNav-trigger-inner"></div>
             </button>
-        </div>
+        </nav>
+
+        </nav>
     </header>
 
     <section class="video-container">
@@ -71,8 +55,9 @@
             <source src="./images/banner-highly-compressed.mp4" type="video/mp4" />
         </video>
 
-        <div class="caption">
-            <h1>South Africa's third solar PV module manufacturing facility.</h1>
+        <div class="caption" data-aos="fade-up">
+            <h1 data-aos="fade-up"><span class="caption-highlight">South Africa's third</span> solar PV module manufacturing
+                facility.</h1>
             <p>Our objective is to develop local solar pv module industrial value chain</p>
 
             <a href="#our-business">
@@ -85,10 +70,11 @@
         <h2>Dzuvha Solar Manufacturing Plant</h2>
         <div class="business-rows">
             <div class="column">
-                <img src="./images/our_business_banner.jpg" alt="our-business" class="business-img">
+                <img src="https://images.unsplash.com/photo-1574360773950-133867861ae9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                    alt="our-business" class="business-img">
             </div>
 
-            <div class="business-column">
+            <div class="business-column" data-aos="fade-up">
                 <h2>Our Business</h2>
                 <p>
                     <a href="./home.html" style="color: var(--orange)">Dzuvha Solar</a> is a South African sustainable
@@ -113,10 +99,10 @@
         </div>
     </section>
 
-    <section class="offers">
+    <section class="offers" data-aos="fade-up">
         <h2>What We Offer</h2>
         <div class="rows-offer">
-            <div class="offer-card-1">
+            <div class="offer-card-1" data-aos="fade-up">
                 <div>
                     <h3>Manufacturing and Assembly</h3>
                     <p>Our company ensures quality manufacturing of the products we offer and leave no room for error
@@ -124,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="offer-card-2">
+            <div class="offer-card-2" data-aos="fade-up">
                 <div>
                     <h3>Solar Installation</h3>
                     <p>Professional Solar installation for our customers. Our company guarantees a safe and top-tier
@@ -132,7 +118,7 @@
                 </div>
             </div>
 
-            <div class="offer-card-3">
+            <div class="offer-card-3" data-aos="fade-up">
                 <div>
                     <h3>Training and Development</h3>
                     <p>
@@ -143,28 +129,28 @@
         </div>
     </section>
 
-    <footer>
+    <footer data-aos="fade-up">
         <section class="footer">
             <div class="footer-columns">
                 <div class="footer-contact-column">
                     <h2>Contact</h2>
                     <ul>
-                        <li>
+                        <li data-aos="zoom-out-down">
                             <img src="./images/icons/geo-alt.svg" alt="loacal">
                             <a href="http://">193 High Road Bredell Kempton Park 1620</a>
                         </li>
-                        <li>
+                        <li data-aos="zoom-out-down">
                             <img src="./images/icons/envelope.svg" alt="email">
                             <a href="mailto:info@mysite.com">info@mysite.com</a>
                         </li>
-                        <li>
+                        <li data-aos="zoom-out-down"> 
                             <img src="./images/icons/telephone.svg" alt="telephone">
                             <a href="123-456-7890">123-456-7890</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="footer-about-column">
+                <div class="footer-about-column" data-aos="fade-up">
                     <h2>About</h2>
                     <p>We provide a thorough in-person solar installation training, which
                         includes theoretical courses to give a background teaching of solar technology leading to
@@ -182,7 +168,11 @@
 
     </footer>
 
+    <script src="./script/aos.min.js"></script>
     <script src="./script/navigation.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 
