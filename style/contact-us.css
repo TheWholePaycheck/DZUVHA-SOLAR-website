@@ -55,14 +55,14 @@ h1 {
 }
 
 .contact-column2 #text {
-    width: 100%;
+    display: flex;
+    width: 50%;
     height: 30px;
-    cursor: text;
-    border: 1px solid rgb(173, 173, 173);
 }
 
 .contact-column2 #message {
-    width: 100%;
+    display: flex;
+    width: 50%;
     resize: none;
     border: 1px solid rgb(173, 173, 173);
 }
@@ -86,3 +86,18 @@ textarea:focus, input:focus {
     outline: var(--orange) !important;
     border-color: var(--orange) !important;
 }
+
+
+/* RESPONSIVENESS FOR LARGER DEVICES (DESKTOPS/TABLETS) */
+@media screen and (max-width: 780px) {
+    .contact-column2 #text {
+        width: 100%;
+    }
+
+    .contact-column2 #message {
+        width: 100%;
+    }
+    
+
+}
+
