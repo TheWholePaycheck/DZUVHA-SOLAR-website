@@ -67,6 +67,9 @@
     background-color: var(--orange);
     padding: 25px;
     text-align: center;
+    
+    /* used to add some space between the contents */
+    margin-top: 54px;
 }
 
 .attribution {
